@@ -19,8 +19,11 @@ namespace ProiectMIP1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Fel gomb", "UP",
+            
+            DialogResult r = MessageBox.Show("Fel gomb", "UP",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            textBox1.Text = r.ToString();
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -39,6 +42,11 @@ namespace ProiectMIP1
         {
             MessageBox.Show("Jobbra gomb", "RIGHT",
                 MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Error);
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
