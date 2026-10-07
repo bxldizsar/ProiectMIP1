@@ -28,20 +28,23 @@ namespace ProiectMIP1
 
         private void button3_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Le gomb", "DOWN",
+            DialogResult r = MessageBox.Show("Le gomb", "DOWN",
                 MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            textBox1.Text = r.ToString();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Balra gomb", "LEFT",
+            DialogResult r = MessageBox.Show("Balra gomb", "LEFT",
                 MessageBoxButtons.RetryCancel, MessageBoxIcon.Warning);
+            textBox1.Text = r.ToString();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Jobbra gomb", "RIGHT",
+            DialogResult r = MessageBox.Show("Jobbra gomb", "RIGHT",
                 MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Error);
+            textBox1.Text = r.ToString();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
