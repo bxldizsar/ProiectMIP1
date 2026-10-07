@@ -16,5 +16,29 @@ namespace ProiectMIP1
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Fel gomb", "UP",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Le gomb", "DOWN",
+                MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Balra gomb", "LEFT",
+                MessageBoxButtons.RetryCancel, MessageBoxIcon.Warning);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Jobbra gomb", "RIGHT",
+                MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Error);
+        }
     }
 }
