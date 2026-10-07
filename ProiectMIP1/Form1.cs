@@ -17,6 +17,7 @@ namespace ProiectMIP1
             InitializeComponent();
         }
 
+        private Random rnd = new Random();
         private void button1_Click(object sender, EventArgs e)
         {
             
@@ -50,6 +51,21 @@ namespace ProiectMIP1
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            timer1.Stop();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            this.BackColor = Color.FromArgb(rnd.Next(256), rnd.Next(256), rnd.Next(256));
         }
     }
 }
