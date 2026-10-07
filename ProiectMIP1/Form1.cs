@@ -67,5 +67,13 @@ namespace ProiectMIP1
         {
             this.BackColor = Color.FromArgb(rnd.Next(256), rnd.Next(256), rnd.Next(256));
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            if (int.TryParse(textBox2.Text, out int ms) && ms > 0)
+            {
+                timer1.Interval = ms;
+            }
+        }
     }
 }
